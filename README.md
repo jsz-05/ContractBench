@@ -1,4 +1,4 @@
-# financial contract benchmark
+# ContractBench
 
 WIP. 50 synthetic development cases about investment-manager compensation:
 30 fee-base and hurdle cases, plus 20 cap, floor, and loss-limit cases.
