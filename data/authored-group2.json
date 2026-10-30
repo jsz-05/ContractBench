@@ -1,0 +1,1887 @@
+[
+  {
+    "id": "G2-01",
+    "family": "G2",
+    "subtype": "bonus_cap",
+    "title": "A capped rare-success bonus",
+    "rationale": "Checks whether a cap removes the compensation advantage of a large but infrequent gain.",
+    "contract_note": "The bonus cap limits the bonus on each realized outcome; the base payment remains separate.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "20",
+      "rate": "0.20",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": "12",
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.25",
+            "periods": [
+              {
+                "gross_profit": "200",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.75",
+            "periods": [
+              {
+                "gross_profit": "-40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "28.00",
+      "B": "23.0000"
+    },
+    "provisional_choice": "A"
+  },
+  {
+    "id": "G2-02",
+    "family": "G2",
+    "subtype": "bonus_cap",
+    "title": "A hurdle and cap after operating costs",
+    "rationale": "Combines a net-profit hurdle with a cap and an outcome that earns no bonus.",
+    "contract_note": "Deduct the stated costs before checking the hurdle, then apply the bonus cap.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "30",
+      "rate": "0.25",
+      "profit_basis": "net",
+      "bonus_type": "hard_hurdle",
+      "hurdle": "20",
+      "hurdle_inclusive": false,
+      "bonus_cap": "10",
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "100",
+                "cost": "40",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.60",
+            "periods": [
+              {
+                "gross_profit": "100",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.40",
+            "periods": [
+              {
+                "gross_profit": "0",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "40.00",
+      "B": "36.000"
+    },
+    "provisional_choice": "A"
+  },
+  {
+    "id": "G2-03",
+    "family": "G2",
+    "subtype": "bonus_cap",
+    "title": "The cap excludes the fixed payment",
+    "rationale": "Checks that the fixed payment is not incorrectly truncated by a cap on the bonus alone.",
+    "contract_note": "Only the variable bonus is capped; the fixed payment is not capped.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "100",
+      "rate": "0.50",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": "20",
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "60",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.80",
+            "periods": [
+              {
+                "gross_profit": "30",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.20",
+            "periods": [
+              {
+                "gross_profit": "-10",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "120",
+      "B": "112.000"
+    },
+    "provisional_choice": "A"
+  },
+  {
+    "id": "G2-04",
+    "family": "G2",
+    "subtype": "bonus_cap",
+    "title": "Three possible outcomes under one cap",
+    "rationale": "Tests applying a nonlinear cap separately in each possible outcome before averaging.",
+    "contract_note": "Averaging investment profits does not replace calculating the capped payment in each outcome.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "12",
+      "rate": "0.40",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": "16",
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.40",
+            "periods": [
+              {
+                "gross_profit": "0",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.40",
+            "periods": [
+              {
+                "gross_profit": "40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.20",
+            "periods": [
+              {
+                "gross_profit": "200",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "30",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "10",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "60",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "21.600",
+      "B": "24.00",
+      "C": "22.000"
+    },
+    "provisional_choice": "B"
+  },
+  {
+    "id": "G2-05",
+    "family": "G2",
+    "subtype": "bonus_cap",
+    "title": "A capped bonus based on gross profits",
+    "rationale": "Separates a contractual gross-profit bonus from the investor costs supplied with each outcome.",
+    "contract_note": "The stated costs are paid by the investor and do not reduce this gross-profit bonus base.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "40",
+      "rate": "0.30",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": "18",
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.40",
+            "periods": [
+              {
+                "gross_profit": "200",
+                "cost": "150",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.60",
+            "periods": [
+              {
+                "gross_profit": "10",
+                "cost": "30",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "35",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.70",
+            "periods": [
+              {
+                "gross_profit": "70",
+                "cost": "5",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.30",
+            "periods": [
+              {
+                "gross_profit": "0",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "49.000",
+      "B": "50.50",
+      "C": "52.600"
+    },
+    "provisional_choice": "C"
+  },
+  {
+    "id": "G2-06",
+    "family": "G2",
+    "subtype": "pay_floor",
+    "title": "A guaranteed minimum after a large loss",
+    "rationale": "Tests a final minimum payment when an otherwise valid loss deduction exceeds the fixed payment.",
+    "contract_note": "This hypothetical loss-sharing contract applies the guaranteed minimum to final total compensation.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "50",
+      "rate": "0.20",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0.50",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": "20",
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "-40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "60",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "-120",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "30.00",
+      "B": "41.000"
+    },
+    "provisional_choice": "B"
+  },
+  {
+    "id": "G2-07",
+    "family": "G2",
+    "subtype": "pay_floor",
+    "title": "Costs and a minimum payment",
+    "rationale": "Requires computing net profits and losses before applying the minimum total payment.",
+    "contract_note": "This hypothetical contract uses net profit for both the bonus and the loss deduction.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "30",
+      "rate": "0.25",
+      "profit_basis": "net",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0.75",
+      "loss_basis": "net",
+      "loss_cap": null,
+      "pay_floor": "10",
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "10",
+                "cost": "30",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "50",
+                "cost": "10",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "20",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.20",
+            "periods": [
+              {
+                "gross_profit": "200",
+                "cost": "20",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.80",
+            "periods": [
+              {
+                "gross_profit": "-60",
+                "cost": "10",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "27.500",
+      "B": "35.00",
+      "C": "23.000"
+    },
+    "provisional_choice": "B"
+  },
+  {
+    "id": "G2-08",
+    "family": "G2",
+    "subtype": "pay_floor",
+    "title": "The full fixed payment is protected",
+    "rationale": "Tests a floor equal to the fixed payment while allowing uncapped positive bonuses.",
+    "contract_note": "The loss deduction is hypothetical, and final pay can never fall below the fixed payment.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "40",
+      "rate": "0.20",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0.50",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": "40",
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "80",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "-80",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "30",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.25",
+            "periods": [
+              {
+                "gross_profit": "200",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.75",
+            "periods": [
+              {
+                "gross_profit": "-20",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "48.000",
+      "B": "46.00",
+      "C": "50.0000"
+    },
+    "provisional_choice": "C"
+  },
+  {
+    "id": "G2-09",
+    "family": "G2",
+    "subtype": "pay_floor",
+    "title": "Different bases for bonuses and deductions",
+    "rationale": "Checks the order of adding a gross-profit bonus, subtracting a net-loss deduction, and applying a final floor.",
+    "contract_note": "This hypothetical contract can award a gross-profit bonus and deduct a net loss in the same outcome.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "30",
+      "rate": "0.20",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0.50",
+      "loss_basis": "net",
+      "loss_cap": null,
+      "pay_floor": "25",
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "50",
+                "cost": "100",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "10",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "80",
+                "cost": "100",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "0",
+                "cost": "40",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "25",
+      "B": "32.00",
+      "C": "30.500"
+    },
+    "provisional_choice": "B"
+  },
+  {
+    "id": "G2-10",
+    "family": "G2",
+    "subtype": "pay_floor",
+    "title": "A minimum payment together with a bonus cap",
+    "rationale": "Tests two different protections: a cap on the bonus and a floor on final total compensation.",
+    "contract_note": "This hypothetical contract caps the bonus first and applies the final minimum after the loss deduction.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "20",
+      "rate": "0.50",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": "15",
+      "loss_rate": "0.25",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": "15",
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "-40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.80",
+            "periods": [
+              {
+                "gross_profit": "0",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.20",
+            "periods": [
+              {
+                "gross_profit": "100",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "16",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "15",
+      "B": "23.000",
+      "C": "28.00"
+    },
+    "provisional_choice": "C"
+  },
+  {
+    "id": "G2-11",
+    "family": "G2",
+    "subtype": "loss_deduction_cap",
+    "title": "A loss limit that does not erase every tradeoff",
+    "rationale": "Tests a cap on the loss deduction while retaining separate probabilities for profitable and losing outcomes.",
+    "contract_note": "This is hypothetical personal loss sharing with a dollar cap on the deduction.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "50",
+      "rate": "0.20",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0.50",
+      "loss_basis": "gross",
+      "loss_cap": "20",
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "20",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "100",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "-200",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "54.00",
+      "B": "50.000"
+    },
+    "provisional_choice": "A"
+  },
+  {
+    "id": "G2-12",
+    "family": "G2",
+    "subtype": "loss_deduction_cap",
+    "title": "Three choices with a bounded loss deduction",
+    "rationale": "Checks a capped downside calculation against both a modest certain gain and a small certain loss.",
+    "contract_note": "The hypothetical loss deduction stops at its stated dollar limit; bonuses use their own rate.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "30",
+      "rate": "0.25",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0.40",
+      "loss_basis": "gross",
+      "loss_cap": "12",
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "-10",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.60",
+            "periods": [
+              {
+                "gross_profit": "40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.40",
+            "periods": [
+              {
+                "gross_profit": "-100",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "3",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "26.00",
+      "B": "31.200",
+      "C": "30.75"
+    },
+    "provisional_choice": "B"
+  },
+  {
+    "id": "G2-13",
+    "family": "G2",
+    "subtype": "loss_deduction_cap",
+    "title": "A deduction cap does not cap the bonus",
+    "rationale": "Separates a limit on loss deductions from an uncapped gain bonus.",
+    "contract_note": "Only hypothetical loss deductions are capped; positive bonuses have no cap.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "80",
+      "rate": "0.30",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0.50",
+      "loss_basis": "gross",
+      "loss_cap": "10",
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.30",
+            "periods": [
+              {
+                "gross_profit": "300",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.70",
+            "periods": [
+              {
+                "gross_profit": "-100",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "60",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "140",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "-10",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "100.000",
+      "B": "98.00",
+      "C": "98.500"
+    },
+    "provisional_choice": "A"
+  },
+  {
+    "id": "G2-14",
+    "family": "G2",
+    "subtype": "loss_deduction_cap",
+    "title": "A loss created by costs",
+    "rationale": "Tests the net-loss definition when gross investment profit is positive but costs make the net result negative.",
+    "contract_note": "This hypothetical loss-sharing contract uses profit after stated costs for both bonuses and deductions.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "25",
+      "rate": "0.20",
+      "profit_basis": "net",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0.50",
+      "loss_basis": "net",
+      "loss_cap": "10",
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "0",
+                "cost": "30",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "50",
+                "cost": "10",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "5",
+                "cost": "15",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "15",
+                "cost": "5",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "15.00",
+      "B": "26.500",
+      "C": "27.00"
+    },
+    "provisional_choice": "C"
+  },
+  {
+    "id": "G2-15",
+    "family": "G2",
+    "subtype": "loss_deduction_cap",
+    "title": "At the deduction limit and beyond it",
+    "rationale": "Includes one loss exactly at the cap threshold and a larger loss that should trigger the same deduction.",
+    "contract_note": "The hypothetical deduction equals its capped amount both at and above the stated limit.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "40",
+      "rate": "0.25",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0.20",
+      "loss_basis": "gross",
+      "loss_cap": "8",
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "-40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "60",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "-100",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "50",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "10",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "43.500",
+      "B": "42.250",
+      "C": "42.50"
+    },
+    "provisional_choice": "A"
+  },
+  {
+    "id": "G2-16",
+    "family": "G2",
+    "subtype": "limit_scope",
+    "title": "A fresh bonus allowance in each period",
+    "rationale": "Tests a separately applied bonus cap in two periods; repeated moderate gains can earn two capped bonuses.",
+    "contract_note": "The bonus cap restarts in each period, while the base payment is paid only once for the complete plan.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "20",
+      "rate": "0.20",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": "8",
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "per_period"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "80",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "0",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "20",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "60",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "0",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "50",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "36.00",
+      "B": "28.00",
+      "C": "30.000"
+    },
+    "provisional_choice": "A"
+  },
+  {
+    "id": "G2-17",
+    "family": "G2",
+    "subtype": "limit_scope",
+    "title": "One bonus allowance for the whole plan",
+    "rationale": "Tests a whole-plan cap on bonuses accumulated across periods and complete path probabilities.",
+    "contract_note": "Add the earned period bonuses and apply one bonus cap to that sum at settlement.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "20",
+      "rate": "0.25",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": "15",
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.60",
+            "periods": [
+              {
+                "gross_profit": "40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.40",
+            "periods": [
+              {
+                "gross_profit": "-20",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "0",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "30",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "10",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "100",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "-20",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "0",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "0",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "29.000",
+      "B": "30.00",
+      "C": "27.500"
+    },
+    "provisional_choice": "B"
+  },
+  {
+    "id": "G2-18",
+    "family": "G2",
+    "subtype": "limit_scope",
+    "title": "The loss limit applies in each period",
+    "rationale": "Distinguishes two separately capped loss deductions from a single cap for the complete plan.",
+    "contract_note": "This hypothetical contract applies its loss-deduction limit to each period separately; earlier bonuses are retained.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "50",
+      "rate": "0.20",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0.50",
+      "loss_basis": "gross",
+      "loss_cap": "10",
+      "pay_floor": null,
+      "limit_scope": "per_period"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "-40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "-40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "100",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "-100",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "-20",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "0",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "10",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "0",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "30.00",
+      "B": "50.000",
+      "C": "52.00"
+    },
+    "provisional_choice": "C"
+  },
+  {
+    "id": "G2-19",
+    "family": "G2",
+    "subtype": "limit_scope",
+    "title": "One loss-deduction limit across periods",
+    "rationale": "Requires adding period loss deductions before applying the single whole-plan cap, without netting away earned bonuses.",
+    "contract_note": "The hypothetical whole-plan limit caps the sum of period loss deductions, not investment losses net of later gains.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "40",
+      "rate": "0.25",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0.50",
+      "loss_basis": "gross",
+      "loss_cap": "12",
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "-20",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "-20",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "-30",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "20",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "60",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "-60",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "-30",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "0",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "28.00",
+      "B": "33.00",
+      "C": "35.500"
+    },
+    "provisional_choice": "C"
+  },
+  {
+    "id": "G2-20",
+    "family": "G2",
+    "subtype": "limit_scope",
+    "title": "Separate plan-wide limits on bonuses and deductions",
+    "rationale": "Tests three periods, separate whole-plan limits on positive bonuses and loss deductions, and final probability averaging.",
+    "contract_note": "Under this hypothetical loss-sharing contract, accumulate bonuses and deductions separately before applying their separate whole-plan caps.",
+    "source_ids": [
+      "synthetic"
+    ],
+    "contract": {
+      "base": "30",
+      "rate": "0.25",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": "6",
+      "loss_rate": "0.50",
+      "loss_basis": "gross",
+      "loss_cap": "8",
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "24",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "24",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "-32",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "80",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "-20",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "0",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "12",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "12",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "12",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.50",
+            "periods": [
+              {
+                "gross_profit": "-40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "0",
+                "cost": "0",
+                "benchmark_profit": "0"
+              },
+              {
+                "gross_profit": "0",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "28",
+      "B": "28",
+      "C": "29.000"
+    },
+    "provisional_choice": "C"
+  }
+]

@@ -1,0 +1,54 @@
+# Reference answers
+
+Expected manager compensation, rounded to cents. Machine-readable records include exact fractions, every outcome payment, investor outcomes, and structured interpretations.
+
+- **G1-01**: A USD 28.00, B USD 30.00, C USD 28.80. Correct choice: **B**.
+- **G1-02**: A USD 39.25, B USD 38.00, C USD 40.00. Correct choice: **C**.
+- **G1-03**: A USD 25.80, B USD 25.43, C USD 24.75. Correct choice: **A**.
+- **G1-04**: A USD 302.50, B USD 301.60, C USD 303.00. Correct choice: **C**.
+- **G1-05**: A USD 36.00, B USD 34.50, C USD 35.25. Correct choice: **A**.
+- **G1-06**: A USD 22.00, B USD 22.40, C USD 22.00. Correct choice: **B**.
+- **G1-07**: A USD 38.00, B USD 40.00, C USD 35.00. Correct choice: **B**.
+- **G1-08**: A USD 36.00, B USD 33.00, C USD 35.00. Correct choice: **A**.
+- **G1-09**: A USD 24.00, B USD 23.00, C USD 25.00. Correct choice: **C**.
+- **G1-10**: A USD 27.40, B USD 26.50, C USD 25.60. Correct choice: **A**.
+- **G1-11**: A USD 33.52, B USD 35.80, C USD 34.96. Correct choice: **B**.
+- **G1-12**: A USD 26.88, B USD 28.75, C USD 30.00. Correct choice: **C**.
+- **G1-13**: A USD 24.00, B USD 29.00, C USD 28.00. Correct choice: **B**.
+- **G1-14**: A USD 30.00, B USD 33.75, C USD 37.20. Correct choice: **C**.
+- **G1-15**: A USD 17.00, B USD 17.50, C USD 18.25. Correct choice: **C**.
+- **G1-16**: A USD 11.00, B USD 9.50, C USD 8.00. Correct choice: **A**.
+- **G1-17**: A USD 44.00, B USD 46.00, C USD 45.00. Correct choice: **B**.
+- **G1-18**: A USD 35.20, B USD 35.00, C USD 31.60. Correct choice: **A**.
+- **G1-19**: A USD 20.00, B USD 29.00, C USD 30.00. Correct choice: **C**.
+- **G1-20**: A USD 18.00, B USD 26.25, C USD 24.00. Correct choice: **B**.
+- **G1-21**: A USD 42.20, B USD 42.50, C USD 35.00. Correct choice: **B**.
+- **G1-22**: A USD 43.00, B USD 41.20, C USD 37.60. Correct choice: **A**.
+- **G1-23**: A USD 21.00, B USD 24.00, C USD 24.75. Correct choice: **C**.
+- **G1-24**: A USD 40.00, B USD 37.00, C USD 24.00. Correct choice: **A**.
+- **G1-25**: A USD 22.00, B USD 22.00, C USD 26.00. Correct choice: **C**.
+- **G1-26**: A USD 25.00, B USD 28.00, C USD 34.00. Correct choice: **C**.
+- **G1-27**: A USD 19.00, B USD 16.00, C USD 12.00. Correct choice: **A**.
+- **G1-28**: A USD 34.00, B USD 33.00, C USD 33.50. Correct choice: **A**.
+- **G1-29**: A USD 20.00, B USD 25.00, C USD 23.00. Correct choice: **B**.
+- **G1-30**: A USD 26.50, B USD 28.25, C USD 27.50. Correct choice: **B**.
+- **G2-01**: A USD 28.00, B USD 23.00. Correct choice: **A**.
+- **G2-02**: A USD 40.00, B USD 36.00. Correct choice: **A**.
+- **G2-03**: A USD 120.00, B USD 112.00. Correct choice: **A**.
+- **G2-04**: A USD 21.60, B USD 24.00, C USD 22.00. Correct choice: **B**.
+- **G2-05**: A USD 49.00, B USD 50.50, C USD 52.60. Correct choice: **C**.
+- **G2-06**: A USD 30.00, B USD 41.00. Correct choice: **B**.
+- **G2-07**: A USD 27.50, B USD 35.00, C USD 23.00. Correct choice: **B**.
+- **G2-08**: A USD 48.00, B USD 46.00, C USD 50.00. Correct choice: **C**.
+- **G2-09**: A USD 25.00, B USD 32.00, C USD 30.50. Correct choice: **B**.
+- **G2-10**: A USD 15.00, B USD 23.00, C USD 28.00. Correct choice: **C**.
+- **G2-11**: A USD 54.00, B USD 50.00. Correct choice: **A**.
+- **G2-12**: A USD 26.00, B USD 31.20, C USD 30.75. Correct choice: **B**.
+- **G2-13**: A USD 100.00, B USD 98.00, C USD 98.50. Correct choice: **A**.
+- **G2-14**: A USD 15.00, B USD 26.50, C USD 27.00. Correct choice: **C**.
+- **G2-15**: A USD 43.50, B USD 42.25, C USD 42.50. Correct choice: **A**.
+- **G2-16**: A USD 36.00, B USD 28.00, C USD 30.00. Correct choice: **A**.
+- **G2-17**: A USD 29.00, B USD 30.00, C USD 27.50. Correct choice: **B**.
+- **G2-18**: A USD 30.00, B USD 50.00, C USD 52.00. Correct choice: **C**.
+- **G2-19**: A USD 28.00, B USD 33.00, C USD 35.50. Correct choice: **C**.
+- **G2-20**: A USD 28.00, B USD 28.00, C USD 29.00. Correct choice: **C**.

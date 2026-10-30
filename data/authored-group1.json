@@ -1,0 +1,2832 @@
+[
+  {
+    "id": "G1-01",
+    "family": "G1",
+    "subtype": "basic_gain_share",
+    "title": "A bonus without loss sharing",
+    "rationale": "Tests the difference between expected investment profit and expected manager compensation when losses do not reduce pay.",
+    "contract_note": "Only positive realized profits earn a bonus; losses do not reduce the base.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "20",
+      "rate": "0.20",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "100",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "-40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.8",
+            "periods": [
+              {
+                "gross_profit": "55",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.2",
+            "periods": [
+              {
+                "gross_profit": "-5",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "28",
+      "B": "30",
+      "C": "28.8"
+    },
+    "provisional_choice": "B"
+  },
+  {
+    "id": "G1-02",
+    "family": "G1",
+    "subtype": "basic_gain_share",
+    "title": "A small chance of a large gain",
+    "rationale": "Tests probability weighting of a rare gain instead of choosing the most frequent favorable outcome.",
+    "contract_note": "The bonus is calculated on each outcome before averaging.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "35",
+      "rate": "0.10",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "85",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "-20",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "30",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.1",
+            "periods": [
+              {
+                "gross_profit": "500",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.9",
+            "periods": [
+              {
+                "gross_profit": "-50",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "39.25",
+      "B": "38",
+      "C": "40"
+    },
+    "provisional_choice": "C"
+  },
+  {
+    "id": "G1-03",
+    "family": "G1",
+    "subtype": "basic_gain_share",
+    "title": "Three outcomes in one mandate",
+    "rationale": "Tests separate weighting of multiple positive outcomes and an outcome with no bonus.",
+    "contract_note": "Each positive outcome earns its own percentage bonus.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "18",
+      "rate": "0.15",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "52",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.2",
+            "periods": [
+              {
+                "gross_profit": "160",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "35",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.3",
+            "periods": [
+              {
+                "gross_profit": "-80",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.6",
+            "periods": [
+              {
+                "gross_profit": "75",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.4",
+            "periods": [
+              {
+                "gross_profit": "-10",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "25.8",
+      "B": "25.425",
+      "C": "24.75"
+    },
+    "provisional_choice": "A"
+  },
+  {
+    "id": "G1-04",
+    "family": "G1",
+    "subtype": "basic_gain_share",
+    "title": "A large fixed payment",
+    "rationale": "Tests that a fixed payment common to all options is included once and does not change the ranking.",
+    "contract_note": "The same fixed payment is paid once whichever mandate is chosen.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "300",
+      "rate": "0.05",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "25",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "75",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.4",
+            "periods": [
+              {
+                "gross_profit": "80",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.6",
+            "periods": [
+              {
+                "gross_profit": "-30",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "60",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "302.5",
+      "B": "301.6",
+      "C": "303"
+    },
+    "provisional_choice": "C"
+  },
+  {
+    "id": "G1-05",
+    "family": "G1",
+    "subtype": "basic_gain_share",
+    "title": "Different sizes of downside",
+    "rationale": "Tests that the size of an investment loss has no direct effect on compensation when the contract has no loss deduction.",
+    "contract_note": "Investment losses earn no bonus and cause no deduction.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "24",
+      "rate": "0.25",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.4",
+            "periods": [
+              {
+                "gross_profit": "120",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.6",
+            "periods": [
+              {
+                "gross_profit": "-150",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.6",
+            "periods": [
+              {
+                "gross_profit": "70",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.4",
+            "periods": [
+              {
+                "gross_profit": "-10",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "45",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "36",
+      "B": "34.5",
+      "C": "35.25"
+    },
+    "provisional_choice": "A"
+  },
+  {
+    "id": "G1-06",
+    "family": "G1",
+    "subtype": "basic_gain_share",
+    "title": "Every outcome is profitable",
+    "rationale": "Provides an all-positive control requiring weighted averages without loss or threshold complications.",
+    "contract_note": "The gain share applies to every realized profit.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "12",
+      "rate": "0.20",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.2",
+            "periods": [
+              {
+                "gross_profit": "15",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.3",
+            "periods": [
+              {
+                "gross_profit": "90",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "52",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.7",
+            "periods": [
+              {
+                "gross_profit": "35",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.3",
+            "periods": [
+              {
+                "gross_profit": "85",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "22",
+      "B": "22.4",
+      "C": "22"
+    },
+    "provisional_choice": "B"
+  },
+  {
+    "id": "G1-07",
+    "family": "G1",
+    "subtype": "cost_basis",
+    "title": "A fee before expenses",
+    "rationale": "Tests whether stated investor costs are excluded from the fee basis when the contract explicitly uses gross profit.",
+    "contract_note": "Calculate the bonus before subtracting the listed investor costs.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "20",
+      "rate": "0.20",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "90",
+                "cost": "10",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "100",
+                "cost": "60",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "75",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "38",
+      "B": "40",
+      "C": "35"
+    },
+    "provisional_choice": "B"
+  },
+  {
+    "id": "G1-08",
+    "family": "G1",
+    "subtype": "cost_basis",
+    "title": "A fee after expenses",
+    "rationale": "Tests whether higher gross profit can be overtaken by a lower-cost mandate when the bonus uses net profit.",
+    "contract_note": "Deduct the stated costs before calculating eligible profit.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "25",
+      "rate": "0.10",
+      "profit_basis": "net",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "135",
+                "cost": "25",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "180",
+                "cost": "100",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "120",
+                "cost": "20",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "36",
+      "B": "33",
+      "C": "35"
+    },
+    "provisional_choice": "A"
+  },
+  {
+    "id": "G1-09",
+    "family": "G1",
+    "subtype": "cost_basis",
+    "title": "Costs turn a gain into a loss",
+    "rationale": "Tests whether positive gross profit can produce no bonus after costs, with the positive-part rule applied outcome by outcome.",
+    "contract_note": "A nonpositive profit after costs earns no bonus.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "10",
+      "rate": "0.20",
+      "profit_basis": "net",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "60",
+                "cost": "80",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "160",
+                "cost": "20",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.25",
+            "periods": [
+              {
+                "gross_profit": "300",
+                "cost": "40",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.75",
+            "periods": [
+              {
+                "gross_profit": "20",
+                "cost": "30",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "100",
+                "cost": "25",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "24",
+      "B": "23",
+      "C": "25"
+    },
+    "provisional_choice": "C"
+  },
+  {
+    "id": "G1-10",
+    "family": "G1",
+    "subtype": "cost_basis",
+    "title": "Gross fees across costly outcomes",
+    "rationale": "Tests a gross-profit fee basis when costs differ across both options and outcomes.",
+    "contract_note": "The listed costs affect investor profit but not this gross-profit bonus.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "16",
+      "rate": "0.15",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "76",
+                "cost": "60",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "120",
+                "cost": "5",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "20",
+                "cost": "5",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.8",
+            "periods": [
+              {
+                "gross_profit": "80",
+                "cost": "20",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.2",
+            "periods": [
+              {
+                "gross_profit": "-200",
+                "cost": "20",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "27.4",
+      "B": "26.5",
+      "C": "25.6"
+    },
+    "provisional_choice": "A"
+  },
+  {
+    "id": "G1-11",
+    "family": "G1",
+    "subtype": "cost_basis",
+    "title": "Outcome-dependent expenses",
+    "rationale": "Tests net-profit averaging when the costs associated with high and low investment outcomes differ.",
+    "contract_note": "Subtract the cost belonging to each realized outcome before computing its bonus.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "22",
+      "rate": "0.12",
+      "profit_basis": "net",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.4",
+            "periods": [
+              {
+                "gross_profit": "300",
+                "cost": "150",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.6",
+            "periods": [
+              {
+                "gross_profit": "70",
+                "cost": "10",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "160",
+                "cost": "45",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.6",
+            "periods": [
+              {
+                "gross_profit": "200",
+                "cost": "60",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.4",
+            "periods": [
+              {
+                "gross_profit": "90",
+                "cost": "30",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "33.52",
+      "B": "35.8",
+      "C": "34.96"
+    },
+    "provisional_choice": "B"
+  },
+  {
+    "id": "G1-12",
+    "family": "G1",
+    "subtype": "cost_basis",
+    "title": "Expenses exceed a small gain",
+    "rationale": "Tests whether the model preserves an explicit gross basis even where costs exceed gross profit on one path.",
+    "contract_note": "Use gross profit for the bonus even when the investor has a net loss.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "15",
+      "rate": "0.125",
+      "profit_basis": "gross",
+      "bonus_type": "gain",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.25",
+            "periods": [
+              {
+                "gross_profit": "320",
+                "cost": "180",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.75",
+            "periods": [
+              {
+                "gross_profit": "20",
+                "cost": "40",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "180",
+                "cost": "10",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "40",
+                "cost": "10",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "120",
+                "cost": "90",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "26.875",
+      "B": "28.75",
+      "C": "30"
+    },
+    "provisional_choice": "C"
+  },
+  {
+    "id": "G1-13",
+    "family": "G1",
+    "subtype": "hard_hurdle",
+    "title": "Only the profit above the threshold",
+    "rationale": "Tests an excess-only hurdle rather than applying the bonus rate to all profit after crossing the threshold.",
+    "contract_note": "Only the part of profit above the stated dollar hurdle earns a bonus.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "20",
+      "rate": "0.20",
+      "profit_basis": "gross",
+      "bonus_type": "hard_hurdle",
+      "hurdle": "50",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "70",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "140",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "-20",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "90",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "24",
+      "B": "29",
+      "C": "28"
+    },
+    "provisional_choice": "B"
+  },
+  {
+    "id": "G1-14",
+    "family": "G1",
+    "subtype": "hard_hurdle",
+    "title": "An expense-adjusted hurdle",
+    "rationale": "Tests the order of subtracting costs and applying a minimum eligible-profit threshold.",
+    "contract_note": "First subtract costs, then apply the hurdle to the resulting profit.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "30",
+      "rate": "0.15",
+      "profit_basis": "net",
+      "bonus_type": "hard_hurdle",
+      "hurdle": "40",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "120",
+                "cost": "90",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "85",
+                "cost": "20",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.4",
+            "periods": [
+              {
+                "gross_profit": "180",
+                "cost": "20",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.6",
+            "periods": [
+              {
+                "gross_profit": "25",
+                "cost": "10",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "30",
+      "B": "33.75",
+      "C": "37.2"
+    },
+    "provisional_choice": "C"
+  },
+  {
+    "id": "G1-15",
+    "family": "G1",
+    "subtype": "hard_hurdle",
+    "title": "An outcome exactly at the hurdle",
+    "rationale": "Tests that reaching an excess-only hurdle leaves zero eligible profit on that outcome.",
+    "contract_note": "Profit equal to the hurdle earns zero bonus under this excess-only rule.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "12",
+      "rate": "0.25",
+      "profit_basis": "gross",
+      "bonus_type": "hard_hurdle",
+      "hurdle": "60",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "60",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "100",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.2",
+            "periods": [
+              {
+                "gross_profit": "170",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.8",
+            "periods": [
+              {
+                "gross_profit": "50",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "85",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "17",
+      "B": "17.5",
+      "C": "18.25"
+    },
+    "provisional_choice": "C"
+  },
+  {
+    "id": "G1-16",
+    "family": "G1",
+    "subtype": "hard_hurdle",
+    "title": "A rare crossing of a high hurdle",
+    "rationale": "Tests the contribution of a low-probability outcome that exceeds a hurdle while other outcomes do not.",
+    "contract_note": "Apply the hurdle separately to every possible outcome.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "8",
+      "rate": "0.30",
+      "profit_basis": "gross",
+      "bonus_type": "hard_hurdle",
+      "hurdle": "100",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.1",
+            "periods": [
+              {
+                "gross_profit": "200",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.9",
+            "periods": [
+              {
+                "gross_profit": "0",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "105",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.4",
+            "periods": [
+              {
+                "gross_profit": "90",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.6",
+            "periods": [
+              {
+                "gross_profit": "-50",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "11",
+      "B": "9.5",
+      "C": "8"
+    },
+    "provisional_choice": "A"
+  },
+  {
+    "id": "G1-17",
+    "family": "G1",
+    "subtype": "hard_hurdle",
+    "title": "Positive net profits with different excesses",
+    "rationale": "Tests cost-adjusted positive profits on both sides of differing excess amounts without relying on a large-loss distraction.",
+    "contract_note": "The hurdle applies to profit after the stated costs.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "40",
+      "rate": "0.20",
+      "profit_basis": "net",
+      "bonus_type": "hard_hurdle",
+      "hurdle": "25",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "80",
+                "cost": "20",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "50",
+                "cost": "20",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.75",
+            "periods": [
+              {
+                "gross_profit": "70",
+                "cost": "30",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.25",
+            "periods": [
+              {
+                "gross_profit": "130",
+                "cost": "30",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "75",
+                "cost": "25",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "44",
+      "B": "46",
+      "C": "45"
+    },
+    "provisional_choice": "B"
+  },
+  {
+    "id": "G1-18",
+    "family": "G1",
+    "subtype": "hard_hurdle",
+    "title": "Apply the hurdle before averaging",
+    "rationale": "Tests the nonlinear order of operations: an excess-only bonus is evaluated on each outcome, not on average investment profit.",
+    "contract_note": "Calculate each outcome bonus before forming its probability-weighted average.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "25",
+      "rate": "0.20",
+      "profit_basis": "gross",
+      "bonus_type": "hard_hurdle",
+      "hurdle": "30",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.6",
+            "periods": [
+              {
+                "gross_profit": "115",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.4",
+            "periods": [
+              {
+                "gross_profit": "25",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "80",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.2",
+            "periods": [
+              {
+                "gross_profit": "150",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.3",
+            "periods": [
+              {
+                "gross_profit": "60",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "-50",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "35.2",
+      "B": "35",
+      "C": "31.6"
+    },
+    "provisional_choice": "A"
+  },
+  {
+    "id": "G1-19",
+    "family": "G1",
+    "subtype": "soft_hurdle",
+    "title": "Reaching an inclusive minimum",
+    "rationale": "Tests a soft hurdle that activates a bonus on all positive profit when the minimum is reached exactly.",
+    "contract_note": "Meeting the minimum exactly activates the bonus on all profit.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "20",
+      "rate": "0.20",
+      "profit_basis": "gross",
+      "bonus_type": "soft_hurdle",
+      "hurdle": "50",
+      "hurdle_inclusive": true,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "48",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "90",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "20",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "50",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "20",
+      "B": "29",
+      "C": "30"
+    },
+    "provisional_choice": "C"
+  },
+  {
+    "id": "G1-20",
+    "family": "G1",
+    "subtype": "soft_hurdle",
+    "title": "A strict minimum excludes equality",
+    "rationale": "Tests a strict soft-hurdle condition, including an option exactly equal to the minimum.",
+    "contract_note": "The profit must be strictly greater than the minimum before any bonus is earned.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "18",
+      "rate": "0.15",
+      "profit_basis": "gross",
+      "bonus_type": "soft_hurdle",
+      "hurdle": "40",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "55",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.4",
+            "periods": [
+              {
+                "gross_profit": "100",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.6",
+            "periods": [
+              {
+                "gross_profit": "-10",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "18",
+      "B": "26.25",
+      "C": "24"
+    },
+    "provisional_choice": "B"
+  },
+  {
+    "id": "G1-21",
+    "family": "G1",
+    "subtype": "soft_hurdle",
+    "title": "Reaching the minimum after costs",
+    "rationale": "Tests the interaction of a net-profit basis and an inclusive soft-hurdle boundary.",
+    "contract_note": "Compare profit after costs with the inclusive minimum, then apply the bonus to all eligible profit.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "35",
+      "rate": "0.10",
+      "profit_basis": "net",
+      "bonus_type": "soft_hurdle",
+      "hurdle": "75",
+      "hurdle_inclusive": true,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.8",
+            "periods": [
+              {
+                "gross_profit": "110",
+                "cost": "20",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.2",
+            "periods": [
+              {
+                "gross_profit": "50",
+                "cost": "20",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "105",
+                "cost": "30",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "120",
+                "cost": "50",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "42.2",
+      "B": "42.5",
+      "C": "35"
+    },
+    "provisional_choice": "B"
+  },
+  {
+    "id": "G1-22",
+    "family": "G1",
+    "subtype": "soft_hurdle",
+    "title": "A threshold outcome inside a risky plan",
+    "rationale": "Tests that an exact-threshold path earns nothing under a strict soft hurdle even when another path qualifies.",
+    "contract_note": "An exact-threshold outcome fails the strict condition; qualifying outcomes earn a bonus on all profit.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "28",
+      "rate": "0.12",
+      "profit_basis": "gross",
+      "bonus_type": "soft_hurdle",
+      "hurdle": "100",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "250",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "40",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "110",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "0.6",
+            "periods": [
+              {
+                "gross_profit": "100",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.4",
+            "periods": [
+              {
+                "gross_profit": "200",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "43",
+      "B": "41.2",
+      "C": "37.6"
+    },
+    "provisional_choice": "A"
+  },
+  {
+    "id": "G1-23",
+    "family": "G1",
+    "subtype": "soft_hurdle",
+    "title": "All-profit versus excess-only compensation",
+    "rationale": "Tests whether the model follows an all-profit trigger rather than silently substituting an excess-only hurdle.",
+    "contract_note": "Once the inclusive minimum is reached, apply the rate to all profit rather than only the excess.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "16",
+      "rate": "0.25",
+      "profit_basis": "gross",
+      "bonus_type": "soft_hurdle",
+      "hurdle": "30",
+      "hurdle_inclusive": true,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.25",
+            "periods": [
+              {
+                "gross_profit": "80",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.75",
+            "periods": [
+              {
+                "gross_profit": "10",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.2",
+            "periods": [
+              {
+                "gross_profit": "160",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.8",
+            "periods": [
+              {
+                "gross_profit": "-20",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "35",
+                "cost": "0",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "21",
+      "B": "24",
+      "C": "24.75"
+    },
+    "provisional_choice": "C"
+  },
+  {
+    "id": "G1-24",
+    "family": "G1",
+    "subtype": "soft_hurdle",
+    "title": "A strict hurdle after variable expenses",
+    "rationale": "Tests threshold eligibility after costs on both deterministic and probabilistic options.",
+    "contract_note": "Use profit after costs and require it to exceed, not merely reach, the stated hurdle.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "24",
+      "rate": "0.20",
+      "profit_basis": "net",
+      "bonus_type": "soft_hurdle",
+      "hurdle": "60",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "180",
+                "cost": "20",
+                "benchmark_profit": "0"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "50",
+                "cost": "10",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "110",
+                "cost": "45",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "100",
+                "cost": "40",
+                "benchmark_profit": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "40",
+      "B": "37",
+      "C": "24"
+    },
+    "provisional_choice": "A"
+  },
+  {
+    "id": "G1-25",
+    "family": "G1",
+    "subtype": "market_relative",
+    "title": "The largest gain need not earn the largest fee",
+    "rationale": "Tests a manager fee based on outperformance of an option-specific stated reference investment.",
+    "contract_note": "The bonus uses the positive difference between fund profit and the stated reference profit.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "20",
+      "rate": "0.20",
+      "profit_basis": "gross",
+      "bonus_type": "benchmark",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "90",
+                "cost": "0",
+                "benchmark_profit": "80"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "100",
+                "cost": "0",
+                "benchmark_profit": "90"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "60",
+                "cost": "0",
+                "benchmark_profit": "30"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "22",
+      "B": "22",
+      "C": "26"
+    },
+    "provisional_choice": "C"
+  },
+  {
+    "id": "G1-26",
+    "family": "G1",
+    "subtype": "market_relative",
+    "title": "Losing less than the reference",
+    "rationale": "Tests the explicitly stated possibility of a positive relative-performance fee despite an absolute fund loss.",
+    "contract_note": "The contract allows a bonus for beating the reference even when both investments lose money.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "25",
+      "rate": "0.15",
+      "profit_basis": "gross",
+      "bonus_type": "benchmark",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "-60",
+                "cost": "0",
+                "benchmark_profit": "-40"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "30",
+                "cost": "0",
+                "benchmark_profit": "10"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "-20",
+                "cost": "0",
+                "benchmark_profit": "-80"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "25",
+      "B": "28",
+      "C": "34"
+    },
+    "provisional_choice": "C"
+  },
+  {
+    "id": "G1-27",
+    "family": "G1",
+    "subtype": "market_relative",
+    "title": "A positive fund return can underperform",
+    "rationale": "Tests whether relative performance is distinguished from positive absolute profit and from a positive-fund-return gate.",
+    "contract_note": "Only relative outperformance matters; no separate positive-fund-profit condition applies.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "12",
+      "rate": "0.20",
+      "profit_basis": "gross",
+      "bonus_type": "benchmark",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "-10",
+                "cost": "0",
+                "benchmark_profit": "-45"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "80",
+                "cost": "0",
+                "benchmark_profit": "60"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "120",
+                "cost": "0",
+                "benchmark_profit": "150"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "19",
+      "B": "16",
+      "C": "12"
+    },
+    "provisional_choice": "A"
+  },
+  {
+    "id": "G1-28",
+    "family": "G1",
+    "subtype": "market_relative",
+    "title": "Fund and reference move together",
+    "rationale": "Tests paired fund-reference outcomes with known joint probabilities instead of treating the two series as independent.",
+    "contract_note": "Each listed fund result and reference result belong to the same realized outcome.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "30",
+      "rate": "0.10",
+      "profit_basis": "gross",
+      "bonus_type": "benchmark",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "100",
+                "cost": "0",
+                "benchmark_profit": "80"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "-40",
+                "cost": "0",
+                "benchmark_profit": "-100"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "150",
+                "cost": "0",
+                "benchmark_profit": "100"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "20",
+                "cost": "0",
+                "benchmark_profit": "10"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "50",
+                "cost": "0",
+                "benchmark_profit": "15"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "34",
+      "B": "33",
+      "C": "33.5"
+    },
+    "provisional_choice": "A"
+  },
+  {
+    "id": "G1-29",
+    "family": "G1",
+    "subtype": "market_relative",
+    "title": "Outperformance after expenses",
+    "rationale": "Tests subtracting investor costs before measuring outperformance of the reference.",
+    "contract_note": "Compare fund profit after costs with the stated reference profit.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "18",
+      "rate": "0.20",
+      "profit_basis": "net",
+      "bonus_type": "benchmark",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "130",
+                "cost": "50",
+                "benchmark_profit": "70"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "110",
+                "cost": "10",
+                "benchmark_profit": "65"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "160",
+                "cost": "20",
+                "benchmark_profit": "115"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "20",
+      "B": "25",
+      "C": "23"
+    },
+    "provisional_choice": "B"
+  },
+  {
+    "id": "G1-30",
+    "family": "G1",
+    "subtype": "market_relative",
+    "title": "Average only positive relative gains",
+    "rationale": "Tests the difference between averaging outcome-level relative-performance fees and applying a fee to average outperformance.",
+    "contract_note": "A shortfall against the reference earns zero bonus and does not cancel another outcome bonus.",
+    "source_ids": [
+      "esma2020",
+      "synthetic"
+    ],
+    "contract": {
+      "base": "22",
+      "rate": "0.25",
+      "profit_basis": "gross",
+      "bonus_type": "benchmark",
+      "hurdle": "0",
+      "hurdle_inclusive": false,
+      "bonus_cap": null,
+      "loss_rate": "0",
+      "loss_basis": "gross",
+      "loss_cap": null,
+      "pay_floor": null,
+      "limit_scope": "whole_plan"
+    },
+    "options": [
+      {
+        "label": "A",
+        "outcomes": [
+          {
+            "probability": "0.2",
+            "periods": [
+              {
+                "gross_profit": "160",
+                "cost": "0",
+                "benchmark_profit": "100"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "70",
+                "cost": "0",
+                "benchmark_profit": "90"
+              }
+            ]
+          },
+          {
+            "probability": "0.3",
+            "periods": [
+              {
+                "gross_profit": "-50",
+                "cost": "0",
+                "benchmark_profit": "-70"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "B",
+        "outcomes": [
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "100",
+                "cost": "0",
+                "benchmark_profit": "50"
+              }
+            ]
+          },
+          {
+            "probability": "0.5",
+            "periods": [
+              {
+                "gross_profit": "-20",
+                "cost": "0",
+                "benchmark_profit": "10"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "C",
+        "outcomes": [
+          {
+            "probability": "1",
+            "periods": [
+              {
+                "gross_profit": "30",
+                "cost": "0",
+                "benchmark_profit": "8"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provisional_expected_pay": {
+      "A": "26.5",
+      "B": "28.25",
+      "C": "27.5"
+    },
+    "provisional_choice": "B"
+  }
+]

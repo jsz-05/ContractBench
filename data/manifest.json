@@ -1,0 +1,67 @@
+{
+  "version": "0.1.0-development",
+  "cases": 50,
+  "families": {
+    "G1": 30,
+    "G2": 20
+  },
+  "status": "Reviewed development cases; no external financial-expert validation.",
+  "case_file_sha256": "3dcd8a8c1df677a4fdf237c3f9580691bfc554043147f016e0a3ce1766aebc22",
+  "sources": {
+    "esma2020": "https://www.esma.europa.eu/sites/default/files/library/esma34-39-992_guidelines_on_performance_fees_en.pdf",
+    "synthetic": "Explicit hypothetical payment rules; no claim of market-standard terms."
+  },
+  "choice_counts": {
+    "B": 16,
+    "C": 17,
+    "A": 17
+  },
+  "subtypes": {
+    "G1: basic_gain_share": 6,
+    "G1: cost_basis": 6,
+    "G1: hard_hurdle": 6,
+    "G1: soft_hurdle": 6,
+    "G1: market_relative": 6,
+    "G2: bonus_cap": 5,
+    "G2: pay_floor": 5,
+    "G2: loss_deduction_cap": 5,
+    "G2: limit_scope": 5
+  },
+  "settings": {
+    "temperature": 0,
+    "seed": 97,
+    "num_ctx": 4096
+  },
+  "profiles": {
+    "direct_fast": {
+      "task": "direct",
+      "think": false,
+      "num_predict": 768
+    },
+    "interpretation_fast": {
+      "task": "interpretation",
+      "think": false,
+      "num_predict": 768
+    },
+    "direct_reasoning": {
+      "task": "direct",
+      "think": true,
+      "num_predict": 2048
+    }
+  },
+  "scoring": {
+    "monetary": "ROUND_HALF_UP to cents; tolerance 0.005 dollars against rounded gold",
+    "choice": "Exact best option under unrounded expected manager compensation",
+    "interpretation": "Compare applicable contract fields; ignore irrelevant schema defaults"
+  },
+  "evaluation_split": "All 50 are development cases. Later variants and numerical siblings must remain in their case group.",
+  "scripts_sha256": {
+    "order_controls.py": "926d66215e506bd27b9080a7b244ea57eec401877cf20c15e5d3990e690410d0",
+    "benchmark.py": "78c64e4cf00154a83570c6f815a132bef69bce6a58c4e71756cccbdddf43bad6",
+    "scoring.py": "d3495027c6e5194a64c8dcee0f316c93bd0fb94090d123c7103859576fb8b6dc",
+    "score_responses.py": "c40514d18a62f42a98595d4b186172add22c3e9ea4e8367f38f44217df11d50c",
+    "check_cases.py": "b96876631ba8e00a0c399b6f338a6834231f33d787763ab4f868a64a1fb0caa7",
+    "write_solutions.py": "4396bb9c44f02449e19f4b34876fd4ca1112de1092bf10c71def8820d505c627",
+    "run_local.py": "772d22e623c41a4c598b096b3823125427e6120e5ce5de531ac178e7e892948c"
+  }
+}

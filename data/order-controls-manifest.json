@@ -1,0 +1,1237 @@
+{
+  "combined_independent_case_count": 50,
+  "combined_prompt_count": 100,
+  "control_choice_counts": {
+    "A": 18,
+    "B": 19,
+    "C": 13
+  },
+  "control_file": "data/order-controls.jsonl",
+  "control_file_sha256": "002ddcc2e0552014ffbc85ea28c99f53c5688fefcd0c97d8c215fa158d7c8b46",
+  "control_prompt_count": 50,
+  "execution": "No model inference or model downloads performed by this script.",
+  "family_counts": {
+    "G1": 30,
+    "G2": 20
+  },
+  "frozen_originals_file": "data/cases.jsonl",
+  "frozen_originals_sha256": "3dcd8a8c1df677a4fdf237c3f9580691bfc554043147f016e0a3ce1766aebc22",
+  "generator_sha256": "926d66215e506bd27b9080a7b244ea57eec401877cf20c15e5d3990e690410d0",
+  "label_fixed_point_note": "For three-option cases, the middle option B stays B under reversal. Unchanged winning labels in those cases are expected, not failures of the transformation.",
+  "original_choice_counts": {
+    "A": 17,
+    "B": 16,
+    "C": 17
+  },
+  "original_independent_case_count": 50,
+  "original_prompt_count": 50,
+  "pairs": [
+    {
+      "base_case_id": "G1-01",
+      "control": {
+        "base_case_id": "G1-01",
+        "correct_label": "B",
+        "id": "G1-01-order-reversed",
+        "prompt_sha256": "a0e8a36d2bdb8f24ed4a46b4e62e87390fdd2a1f33ed8508606aa91ef0f36ef8",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-01",
+        "correct_label": "B",
+        "id": "G1-01",
+        "prompt_sha256": "2deaf3a0b7089b8b3139c8319553800cad7c08a5e0df810a7de39e224c3f7330",
+        "variant_type": "original"
+      },
+      "winner_label_changes": false
+    },
+    {
+      "base_case_id": "G1-02",
+      "control": {
+        "base_case_id": "G1-02",
+        "correct_label": "A",
+        "id": "G1-02-order-reversed",
+        "prompt_sha256": "06621c217bd8f0d5c54d75cf445bbb582a8db9c68421da802a6fe24cc690e82b",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-02",
+        "correct_label": "C",
+        "id": "G1-02",
+        "prompt_sha256": "7bc07a280f114496993812fae487b2cfaf8b27a496985d0600b1c085c3937f3e",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-03",
+      "control": {
+        "base_case_id": "G1-03",
+        "correct_label": "C",
+        "id": "G1-03-order-reversed",
+        "prompt_sha256": "1fef88cc513580bc950344e1871dbae21a4fa5c378e291309a342ae1965de73b",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-03",
+        "correct_label": "A",
+        "id": "G1-03",
+        "prompt_sha256": "17d752f9181702ea2709389916cc201ff3c08a65cfc2e100cc49d6d335bbb60e",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-04",
+      "control": {
+        "base_case_id": "G1-04",
+        "correct_label": "A",
+        "id": "G1-04-order-reversed",
+        "prompt_sha256": "f0f73e3157be8637188aef510b9b35ee2758906a23e78e99b22c34a2d6fa5984",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-04",
+        "correct_label": "C",
+        "id": "G1-04",
+        "prompt_sha256": "71892ab8e072da9a1ffe41c790a817517cbdb9b11d4ef2c72ed9e4a870fc3379",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-05",
+      "control": {
+        "base_case_id": "G1-05",
+        "correct_label": "C",
+        "id": "G1-05-order-reversed",
+        "prompt_sha256": "e63abdaf82090a35b7046865f2645282d82394f5b51afab7f898a0623f8f1a1c",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-05",
+        "correct_label": "A",
+        "id": "G1-05",
+        "prompt_sha256": "8e5efbb4f491bbda77a80b6c8e2d544cbe78f643f7112e1b9bea23a6e17b2046",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-06",
+      "control": {
+        "base_case_id": "G1-06",
+        "correct_label": "B",
+        "id": "G1-06-order-reversed",
+        "prompt_sha256": "884413dfec3d48068e9ff21d80741a16b44a92986f1ee56158c85e2a2dc128fe",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-06",
+        "correct_label": "B",
+        "id": "G1-06",
+        "prompt_sha256": "3be8e32528d961bcb629737ea16b0b4d1b37bec0af15d25a62dcc5d79797f8de",
+        "variant_type": "original"
+      },
+      "winner_label_changes": false
+    },
+    {
+      "base_case_id": "G1-07",
+      "control": {
+        "base_case_id": "G1-07",
+        "correct_label": "B",
+        "id": "G1-07-order-reversed",
+        "prompt_sha256": "40acf96cf5726f18c7f91f78d80cfbf0d579d08c8b9664d691a5fab2dce6d26f",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-07",
+        "correct_label": "B",
+        "id": "G1-07",
+        "prompt_sha256": "0472c3e87291cb5e021320902b9536f219c08b95e1942f5b5ec82e5a8be3bce8",
+        "variant_type": "original"
+      },
+      "winner_label_changes": false
+    },
+    {
+      "base_case_id": "G1-08",
+      "control": {
+        "base_case_id": "G1-08",
+        "correct_label": "C",
+        "id": "G1-08-order-reversed",
+        "prompt_sha256": "3e6de00f5d3e50a4418f76466027ac5edbb8897e12d87bb670d2225fe402021d",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-08",
+        "correct_label": "A",
+        "id": "G1-08",
+        "prompt_sha256": "8672bf68a9532b3760636e51521cdf604348fbaa8c63fe2414658811063d2ccc",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-09",
+      "control": {
+        "base_case_id": "G1-09",
+        "correct_label": "A",
+        "id": "G1-09-order-reversed",
+        "prompt_sha256": "3ea0ffbed5ac32ffce16c8616c81e69e4952d55aa5b5102d9198c4f94ce3165f",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-09",
+        "correct_label": "C",
+        "id": "G1-09",
+        "prompt_sha256": "1856b80ac3d544a6067c4faaa5a9e4b014819cfde2fdf9d7e3fe91da5a5899c3",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-10",
+      "control": {
+        "base_case_id": "G1-10",
+        "correct_label": "C",
+        "id": "G1-10-order-reversed",
+        "prompt_sha256": "266d0536c73e3dec5320a0576aca47a51d63b3d8e7680f153aeece2f253c471c",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-10",
+        "correct_label": "A",
+        "id": "G1-10",
+        "prompt_sha256": "4c8036e53468d0828c3f47ecbeada9aa7ed9f92e7d01ad5cfa4969c1d8fd5f38",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-11",
+      "control": {
+        "base_case_id": "G1-11",
+        "correct_label": "B",
+        "id": "G1-11-order-reversed",
+        "prompt_sha256": "0079eecdd53e0416e83d329177d8b6fbc0cf2dd5f4e074e07bd08c4028b5186d",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-11",
+        "correct_label": "B",
+        "id": "G1-11",
+        "prompt_sha256": "138bfc53045cf653ffa2a2c3fec4b30f40ff8d055dcb28a49027923dd81b6510",
+        "variant_type": "original"
+      },
+      "winner_label_changes": false
+    },
+    {
+      "base_case_id": "G1-12",
+      "control": {
+        "base_case_id": "G1-12",
+        "correct_label": "A",
+        "id": "G1-12-order-reversed",
+        "prompt_sha256": "0f97c2c27be28ce672c701220e9496df04244e3b49ce3fbb427de83ed1d3d2db",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-12",
+        "correct_label": "C",
+        "id": "G1-12",
+        "prompt_sha256": "7e79554ea62e78e0f00b6bec6bd5ae655dac44c78f6dbc89e2948c05177565d2",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-13",
+      "control": {
+        "base_case_id": "G1-13",
+        "correct_label": "B",
+        "id": "G1-13-order-reversed",
+        "prompt_sha256": "7bcb68def15c422959e319d8a3cfaa54a4fa1abcbe168517d2904b64f8914b18",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-13",
+        "correct_label": "B",
+        "id": "G1-13",
+        "prompt_sha256": "998595c878b6e3097a3874108cde3e89efc21267d8b9a660f041fcb8d482a5a0",
+        "variant_type": "original"
+      },
+      "winner_label_changes": false
+    },
+    {
+      "base_case_id": "G1-14",
+      "control": {
+        "base_case_id": "G1-14",
+        "correct_label": "A",
+        "id": "G1-14-order-reversed",
+        "prompt_sha256": "f7ed892e66a074154ddf1df854640d23c3d37fe1a978396c2363e1a123ed6e62",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-14",
+        "correct_label": "C",
+        "id": "G1-14",
+        "prompt_sha256": "b0cd20364dff47ee86f6e2d930e05bde539ec7653b2c192e0a1c5c64a4bae0e6",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-15",
+      "control": {
+        "base_case_id": "G1-15",
+        "correct_label": "A",
+        "id": "G1-15-order-reversed",
+        "prompt_sha256": "18341b84b9e4c3a70d7c577139a599f3903ea18a0a3dc6e27e9aaf103190517d",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-15",
+        "correct_label": "C",
+        "id": "G1-15",
+        "prompt_sha256": "e1ab3df1d3c5a7616581d758b42af4860b61d585f53536fbaf7af3d9f9740316",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-16",
+      "control": {
+        "base_case_id": "G1-16",
+        "correct_label": "C",
+        "id": "G1-16-order-reversed",
+        "prompt_sha256": "fe27b297c75117e3f3cb26f30a4a0e2d2cb59b99259e37a3d9d91bfe65ded10d",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-16",
+        "correct_label": "A",
+        "id": "G1-16",
+        "prompt_sha256": "d829bc1fe150072b28ba62d0a2aeb820068b66b7ec58bc1993b754389396601b",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-17",
+      "control": {
+        "base_case_id": "G1-17",
+        "correct_label": "B",
+        "id": "G1-17-order-reversed",
+        "prompt_sha256": "9aa61c7a1e836f2aa926c82c71dfae751cb542b4afc3219823d424dcd4abc4d1",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-17",
+        "correct_label": "B",
+        "id": "G1-17",
+        "prompt_sha256": "a9507dcdde63a3ddf08a1d0ac92028a933e6ebd17153642504f2d683e45f01a4",
+        "variant_type": "original"
+      },
+      "winner_label_changes": false
+    },
+    {
+      "base_case_id": "G1-18",
+      "control": {
+        "base_case_id": "G1-18",
+        "correct_label": "C",
+        "id": "G1-18-order-reversed",
+        "prompt_sha256": "5ae0d71ab653e9e32d4914e83be17dd967bac6a1d84281fedadb72c530cfd8e1",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-18",
+        "correct_label": "A",
+        "id": "G1-18",
+        "prompt_sha256": "0292f5b1a8a1709150e4ddd12d409179480c37af16905547bf1b68b6098e1687",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-19",
+      "control": {
+        "base_case_id": "G1-19",
+        "correct_label": "A",
+        "id": "G1-19-order-reversed",
+        "prompt_sha256": "e2d77f8de21aee390ef931a40984bfa375eeb20611c83dee5a4a9757f8bea6f7",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-19",
+        "correct_label": "C",
+        "id": "G1-19",
+        "prompt_sha256": "bb1ea4da3fea24543cc741db617830e68453a02383e587dd9da57e36dbcf0fbf",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-20",
+      "control": {
+        "base_case_id": "G1-20",
+        "correct_label": "B",
+        "id": "G1-20-order-reversed",
+        "prompt_sha256": "a21733b9af2afc88576e2c84eaaa9a202d330482ca9d29ed894527b4bfbbdf1c",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-20",
+        "correct_label": "B",
+        "id": "G1-20",
+        "prompt_sha256": "ed28b4155e48d13c047a39e2b822f3cd68572014502d6ec690c5799079b6d4ca",
+        "variant_type": "original"
+      },
+      "winner_label_changes": false
+    },
+    {
+      "base_case_id": "G1-21",
+      "control": {
+        "base_case_id": "G1-21",
+        "correct_label": "B",
+        "id": "G1-21-order-reversed",
+        "prompt_sha256": "b6114709602d1cc07837290ee83459157067dffb13721301f736b01f7895c791",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-21",
+        "correct_label": "B",
+        "id": "G1-21",
+        "prompt_sha256": "580060b140602a97e0eaffd104293af309a59419587de33973e1ff3dc2a487e7",
+        "variant_type": "original"
+      },
+      "winner_label_changes": false
+    },
+    {
+      "base_case_id": "G1-22",
+      "control": {
+        "base_case_id": "G1-22",
+        "correct_label": "C",
+        "id": "G1-22-order-reversed",
+        "prompt_sha256": "53ba0f665bd85974413c2f5aecdba2ae3e385566984096c34e3cde2069ad5768",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-22",
+        "correct_label": "A",
+        "id": "G1-22",
+        "prompt_sha256": "88a84262a52464ca45277e63be417bb9e462ea38f3c5f3f69d43f293805acf05",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-23",
+      "control": {
+        "base_case_id": "G1-23",
+        "correct_label": "A",
+        "id": "G1-23-order-reversed",
+        "prompt_sha256": "98add26f11b80b8b775a17ee6d1392d7bd6939a1e0275256fd82afdf5bb57717",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-23",
+        "correct_label": "C",
+        "id": "G1-23",
+        "prompt_sha256": "95bf7c6c1e8f2773c53401b695f430167807a050259442da47e080055dbd773e",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-24",
+      "control": {
+        "base_case_id": "G1-24",
+        "correct_label": "C",
+        "id": "G1-24-order-reversed",
+        "prompt_sha256": "3d2489a1f9a60a6c4f3a9e6aa952fa23570bfe05cd74ff9dfb6f0f5dce4fc16c",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-24",
+        "correct_label": "A",
+        "id": "G1-24",
+        "prompt_sha256": "ff96e82ed3d4d41f6dee4ef8ced67291aa606bdf4def2f9defe73e86aa2e55c9",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-25",
+      "control": {
+        "base_case_id": "G1-25",
+        "correct_label": "A",
+        "id": "G1-25-order-reversed",
+        "prompt_sha256": "7b4fd40c966268e58aa5c4b487ea230ed524584a793d9f7543b7a5da2c6fbf23",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-25",
+        "correct_label": "C",
+        "id": "G1-25",
+        "prompt_sha256": "eec3a26c00cf2f62b30b34c6e4c485b2cfaa3b3537abe4c443dc607dc25cd4fa",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-26",
+      "control": {
+        "base_case_id": "G1-26",
+        "correct_label": "A",
+        "id": "G1-26-order-reversed",
+        "prompt_sha256": "cd6d144b2846ffed3e1b7512dcde003148282be83d6421728538fe597f190e49",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-26",
+        "correct_label": "C",
+        "id": "G1-26",
+        "prompt_sha256": "290145c89e901c91e73341aaa50f7bbc2f1d92e83761ac9fceae28ae7fded9de",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-27",
+      "control": {
+        "base_case_id": "G1-27",
+        "correct_label": "C",
+        "id": "G1-27-order-reversed",
+        "prompt_sha256": "54cb3fb5c646606a40cc95fd82cfe1251b186545ff0df52efcd59589496a4620",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-27",
+        "correct_label": "A",
+        "id": "G1-27",
+        "prompt_sha256": "8680b7573264c2425a5379ae12efe8d4cdb9cf71f2b3a15c41a6bdc572690a24",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-28",
+      "control": {
+        "base_case_id": "G1-28",
+        "correct_label": "C",
+        "id": "G1-28-order-reversed",
+        "prompt_sha256": "08c47c85bd7a4eb27fed7b677c1707781ba209d27ba7a8422cd0e9338d9d0b4f",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-28",
+        "correct_label": "A",
+        "id": "G1-28",
+        "prompt_sha256": "ac5f932936a5be82297cc159fd109f11f4d90692d48eaefeb9d0176ec54a491e",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G1-29",
+      "control": {
+        "base_case_id": "G1-29",
+        "correct_label": "B",
+        "id": "G1-29-order-reversed",
+        "prompt_sha256": "a21c535ad7c33734df0163ecf8e8ac4f42f9f2235740b4a86ccfe798f9ae60d2",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-29",
+        "correct_label": "B",
+        "id": "G1-29",
+        "prompt_sha256": "1e6c2a8a5182e62af8c28693bc4d8f1fc3e15aad4a59c2f205ac3b636eed18ed",
+        "variant_type": "original"
+      },
+      "winner_label_changes": false
+    },
+    {
+      "base_case_id": "G1-30",
+      "control": {
+        "base_case_id": "G1-30",
+        "correct_label": "B",
+        "id": "G1-30-order-reversed",
+        "prompt_sha256": "9593de3d59d1fcdae70467177e5db94982964dc9212d6577351ff5c67c9ff9e9",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G1-30",
+        "correct_label": "B",
+        "id": "G1-30",
+        "prompt_sha256": "c5d52c5d9b6f85771dd46440da24c6777af9f851a18b5b6894837cae6d08cd1e",
+        "variant_type": "original"
+      },
+      "winner_label_changes": false
+    },
+    {
+      "base_case_id": "G2-01",
+      "control": {
+        "base_case_id": "G2-01",
+        "correct_label": "B",
+        "id": "G2-01-order-reversed",
+        "prompt_sha256": "f3954e22c2c3fbc45c4ae72f461b3cc09e581f18f6c213eaf4fdb6d10647109b",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "B",
+        "B": "A"
+      },
+      "original": {
+        "base_case_id": "G2-01",
+        "correct_label": "A",
+        "id": "G2-01",
+        "prompt_sha256": "2f60864419a01441259ccd65e554bdfbf3eef1f2c28c5b0152f0f5644df4e8f6",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G2-02",
+      "control": {
+        "base_case_id": "G2-02",
+        "correct_label": "B",
+        "id": "G2-02-order-reversed",
+        "prompt_sha256": "27743e9ba0cea9596a2167b913c7df8204bdb3506b25405aeb78fd3dc690aa35",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "B",
+        "B": "A"
+      },
+      "original": {
+        "base_case_id": "G2-02",
+        "correct_label": "A",
+        "id": "G2-02",
+        "prompt_sha256": "7e3f6d02a3ca1677299d6cf906bbf9246b350cf39d8cb775919c70cd96a0b64b",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G2-03",
+      "control": {
+        "base_case_id": "G2-03",
+        "correct_label": "B",
+        "id": "G2-03-order-reversed",
+        "prompt_sha256": "d52e2ef2dc406de7967b8cd3d2d701a01bd202a7bbf0561384bc29f38d73f0fe",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "B",
+        "B": "A"
+      },
+      "original": {
+        "base_case_id": "G2-03",
+        "correct_label": "A",
+        "id": "G2-03",
+        "prompt_sha256": "0caaf8da6d6fbec3c509e88d70519e17a96f31283303a666e03da8ffdb2c55bd",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G2-04",
+      "control": {
+        "base_case_id": "G2-04",
+        "correct_label": "B",
+        "id": "G2-04-order-reversed",
+        "prompt_sha256": "37e9be4fdf6b2270c50406f56f749fe4ebeb8c7a580a644cd60a2cc0fc6c77c8",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G2-04",
+        "correct_label": "B",
+        "id": "G2-04",
+        "prompt_sha256": "5a870cec9d2cfa9ae061e4ffcd7eee204a1f85d62c4b23e0a6906cec10c8d066",
+        "variant_type": "original"
+      },
+      "winner_label_changes": false
+    },
+    {
+      "base_case_id": "G2-05",
+      "control": {
+        "base_case_id": "G2-05",
+        "correct_label": "A",
+        "id": "G2-05-order-reversed",
+        "prompt_sha256": "c428a1d693aeee6464810189ce91ad5fe072ce9a3ff28c6ab2d69845d1d95f29",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G2-05",
+        "correct_label": "C",
+        "id": "G2-05",
+        "prompt_sha256": "014e02cee95cad27618e1680a415cdefda9f8f7be9d0117984f2dc852ee256f1",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G2-06",
+      "control": {
+        "base_case_id": "G2-06",
+        "correct_label": "A",
+        "id": "G2-06-order-reversed",
+        "prompt_sha256": "97d96a8806c5a781e6b2c5118b066ebb3c1cd89bb68ebcfb6a1b85e82d4769c2",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "B",
+        "B": "A"
+      },
+      "original": {
+        "base_case_id": "G2-06",
+        "correct_label": "B",
+        "id": "G2-06",
+        "prompt_sha256": "292aa6ae68d317d8ddd19e6d714d5bea92d7d9502e8311e21f44faa67e062911",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G2-07",
+      "control": {
+        "base_case_id": "G2-07",
+        "correct_label": "B",
+        "id": "G2-07-order-reversed",
+        "prompt_sha256": "b749bec43ddc5aaf584829645432fc147526e3be33f35a653cf0bb191687b865",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G2-07",
+        "correct_label": "B",
+        "id": "G2-07",
+        "prompt_sha256": "41fe96e4d47403d7139aa77525269848f2b6970ce6d813e17ad13602201dfa47",
+        "variant_type": "original"
+      },
+      "winner_label_changes": false
+    },
+    {
+      "base_case_id": "G2-08",
+      "control": {
+        "base_case_id": "G2-08",
+        "correct_label": "A",
+        "id": "G2-08-order-reversed",
+        "prompt_sha256": "35359dc2ee5a9b18dbdf77fbfcf7ad4b8c80b68ceaad2fc6831b4795dda1762f",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G2-08",
+        "correct_label": "C",
+        "id": "G2-08",
+        "prompt_sha256": "055340f26bc0e8e639a0f372623440ca5befec3bd30af2c522fc98e001e998c3",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G2-09",
+      "control": {
+        "base_case_id": "G2-09",
+        "correct_label": "B",
+        "id": "G2-09-order-reversed",
+        "prompt_sha256": "ea9e4238fe8850e5688776f93e66081ee2425268ef7ca7b34683ed76abb55997",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G2-09",
+        "correct_label": "B",
+        "id": "G2-09",
+        "prompt_sha256": "46ff33aef09130d6ae129ae422ba6278b2c27f2c0e66bc5ed94b603ab2b86638",
+        "variant_type": "original"
+      },
+      "winner_label_changes": false
+    },
+    {
+      "base_case_id": "G2-10",
+      "control": {
+        "base_case_id": "G2-10",
+        "correct_label": "A",
+        "id": "G2-10-order-reversed",
+        "prompt_sha256": "63369a2d0615e6e1d897c8f7a0a4616526778e5c76d171f4a87ea7071551c4ee",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G2-10",
+        "correct_label": "C",
+        "id": "G2-10",
+        "prompt_sha256": "bfe144e37f55f4107957aeb0654a8cc064144760f076059ec9ddcc7508fb49ee",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G2-11",
+      "control": {
+        "base_case_id": "G2-11",
+        "correct_label": "B",
+        "id": "G2-11-order-reversed",
+        "prompt_sha256": "299d23b2f22bafce9a0e2b4d08e8537ce7e0c30dbd0e6e6593f193f6d7d4c9e3",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "B",
+        "B": "A"
+      },
+      "original": {
+        "base_case_id": "G2-11",
+        "correct_label": "A",
+        "id": "G2-11",
+        "prompt_sha256": "dd98cb58e4c0d72b150ab6eb26fd088d3d93855cff46b3a5c6ff04df06400c6c",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G2-12",
+      "control": {
+        "base_case_id": "G2-12",
+        "correct_label": "B",
+        "id": "G2-12-order-reversed",
+        "prompt_sha256": "107eab4d445d41f1faaf040aa2360bc86a21639528a94dc12eccb724a110c394",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G2-12",
+        "correct_label": "B",
+        "id": "G2-12",
+        "prompt_sha256": "e72fc90fb58c6e45c3cd02d4b15e95f592fe8b94b12efa84137eb3f620e32e8f",
+        "variant_type": "original"
+      },
+      "winner_label_changes": false
+    },
+    {
+      "base_case_id": "G2-13",
+      "control": {
+        "base_case_id": "G2-13",
+        "correct_label": "C",
+        "id": "G2-13-order-reversed",
+        "prompt_sha256": "ce364665d1d17052132f6f99784f258c4831d3ea765c8cd967a9858acc00d6ee",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G2-13",
+        "correct_label": "A",
+        "id": "G2-13",
+        "prompt_sha256": "5c1075bd906518fc86e89b43b27cc73c546adddb4e234cae3ce27ddb403f1ed3",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G2-14",
+      "control": {
+        "base_case_id": "G2-14",
+        "correct_label": "A",
+        "id": "G2-14-order-reversed",
+        "prompt_sha256": "a488ca7149a8ab8b5956020715c4eb228fd90dd42cddc2355b2d38e4e53f563f",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G2-14",
+        "correct_label": "C",
+        "id": "G2-14",
+        "prompt_sha256": "2459b844ead821abb06e8f403b8e2ca45c76a6fc080df913374229a10757484b",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G2-15",
+      "control": {
+        "base_case_id": "G2-15",
+        "correct_label": "C",
+        "id": "G2-15-order-reversed",
+        "prompt_sha256": "03f7f2f8379bd86cd903ee0d758454937581ba84b7c44ede8cec723bfd1ecc5c",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G2-15",
+        "correct_label": "A",
+        "id": "G2-15",
+        "prompt_sha256": "0639b7264058e1273acadcde4e9d798b8147139acf6c62d777f1959d4e4a2ae0",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G2-16",
+      "control": {
+        "base_case_id": "G2-16",
+        "correct_label": "C",
+        "id": "G2-16-order-reversed",
+        "prompt_sha256": "9a38877aa6e258b5427b039b86a195697211040dcb29e820a0e8f506aa1b7e70",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G2-16",
+        "correct_label": "A",
+        "id": "G2-16",
+        "prompt_sha256": "17ea16aca7b0479ed29c1653f7a34f682de2c9d4042bb37cfdae0bbcb64cee64",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G2-17",
+      "control": {
+        "base_case_id": "G2-17",
+        "correct_label": "B",
+        "id": "G2-17-order-reversed",
+        "prompt_sha256": "7fab2763fbd9e71f74a612639bb1dcdfcbd949dc454e7ed2d63eef9017e1b0be",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G2-17",
+        "correct_label": "B",
+        "id": "G2-17",
+        "prompt_sha256": "6d1e25f53eae2320882d0da679aff76584a13d2a4fc4a0e667f889c20773f568",
+        "variant_type": "original"
+      },
+      "winner_label_changes": false
+    },
+    {
+      "base_case_id": "G2-18",
+      "control": {
+        "base_case_id": "G2-18",
+        "correct_label": "A",
+        "id": "G2-18-order-reversed",
+        "prompt_sha256": "3e98d704a860096ba10742660fd0d341e927d155a1652b4405a17a4bc0f60bce",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G2-18",
+        "correct_label": "C",
+        "id": "G2-18",
+        "prompt_sha256": "edbe74665c7e2b6f9a3f06b005d8f71d607a431ce3ca2f4e4bc92682f6984edc",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G2-19",
+      "control": {
+        "base_case_id": "G2-19",
+        "correct_label": "A",
+        "id": "G2-19-order-reversed",
+        "prompt_sha256": "535770b6cad30f05e240dc7a85dcc44f21fe6548ff493b5530076a960ccd8a47",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G2-19",
+        "correct_label": "C",
+        "id": "G2-19",
+        "prompt_sha256": "9d2fe100b6a582f1ff8314b249f8ca2a525aef17fa0e2e7873d67204adff7d37",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    },
+    {
+      "base_case_id": "G2-20",
+      "control": {
+        "base_case_id": "G2-20",
+        "correct_label": "A",
+        "id": "G2-20-order-reversed",
+        "prompt_sha256": "3df77bb1f2f6f08e6829f6e1683cae317f3fb4122d7e36db56f879d4cf814770",
+        "variant_type": "reverse_option_order"
+      },
+      "exact_financial_outcomes_preserved": true,
+      "old_to_new_labels": {
+        "A": "C",
+        "B": "B",
+        "C": "A"
+      },
+      "original": {
+        "base_case_id": "G2-20",
+        "correct_label": "C",
+        "id": "G2-20",
+        "prompt_sha256": "3919ca2ca8426957da23c62dd05e7e001e99bcb37d566a90e928d5ae71807af9",
+        "variant_type": "original"
+      },
+      "winner_label_changes": true
+    }
+  ],
+  "reference_invariance": "All exact and rounded manager payments, investor payments, path ledgers, and optimal underlying options are identical after applying old_to_new_labels. Displayed winning labels are expected to change only according to that mapping.",
+  "renderer_reference_sha256": "78c64e4cf00154a83570c6f815a132bef69bce6a58c4e71756cccbdddf43bad6",
+  "split_rule": "An original and its control are one case group and must remain in the same data split. All cases are development cases.",
+  "transform": {
+    "logic": "Reverse the original option identities, then relabel the displayed list A, B, C. Leave each identity's financial outcomes and the contract unchanged.",
+    "name": "reverse_option_order_then_relabel",
+    "randomness_used": false,
+    "seed": null
+  },
+  "version": "0.1.0-development-order-controls",
+  "winner_label_changes": 35,
+  "winner_label_unchanged": 15
+}
