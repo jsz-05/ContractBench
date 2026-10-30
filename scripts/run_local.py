@@ -29,19 +29,21 @@ def memory():
         match = re.search(r"memory free percentage:\s*(\d+)%", free.stdout)
         if match is None:
             raise RuntimeError("Cannot verify memory headroom")
-        return {"normal": int(pressure.stdout.strip()) == 1, "free_percent": int(match.group(1))}
+        level = int(pressure.stdout.strip())
+        return {"normal": level == 1, "pressure_level": level, "free_percent": int(match.group(1))}
     if platform.system() == "Linux":
         fields = {}
         for line in Path("/proc/meminfo").read_text().splitlines():
             key, value = line.split(":", 1)
             fields[key] = int(value.strip().split()[0])
-        return {"normal": True, "free_percent": 100 * fields["MemAvailable"] // fields["MemTotal"]}
+        return {"normal": True, "pressure_level": 1, "free_percent": 100 * fields["MemAvailable"] // fields["MemTotal"]}
     raise RuntimeError("Memory guards currently support macOS and Linux")
 
 
 def ensure_memory(initial=False):
     current = memory()
-    if not current["normal"] or current["free_percent"] < (45 if initial else 28):
+    # Yellow pressure alone is not a failure; critical pressure still stops the run.
+    if current["pressure_level"] >= 4 or current["free_percent"] < (20 if initial else 10):
         raise RuntimeError("Memory safety stop: " + json.dumps(current))
     return current
 

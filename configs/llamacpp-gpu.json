@@ -1,0 +1,19 @@
+{
+  "purpose": "One text-only GPU model at a time; no host prompt cache or optional context checkpoints.",
+  "server_args": [
+    "--offline", "--no-webui", "--no-mmproj",
+    "--cache-ram", "0", "--ctx-checkpoints", "0",
+    "--no-cache-prompt", "--no-cache-idle-slots",
+    "--load-mode", "mmap", "--lazy-mode", "on", "--fit", "off",
+    "-ngl", "all", "-np", "1", "-c", "4096",
+    "-b", "64", "-ub", "64", "-t", "4", "-fa", "on",
+    "--no-warmup", "--jinja", "--reasoning", "off",
+    "--chat-template-kwargs", "{\"enable_thinking\":false}"
+  ],
+  "generation": {"temperature": 0, "seed": 97, "max_tokens": 768},
+  "notes": [
+    "Supply the installed model path, a loopback host and port, and the correct model chat template.",
+    "Yellow memory pressure is allowed. Monitor for critical pressure, low headroom and sustained thrashing.",
+    "Verify total parameters are at most 8B before loading. Unload the model before starting another."
+  ]
+}

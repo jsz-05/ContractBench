@@ -20,3 +20,5 @@ python3 scripts/score_responses.py --help
 Local evaluation requires an existing Ollama server. The runner never downloads
 models and uses memory guards and an 8B total-parameter ceiling. Local outputs
 go in `results/` and are ignored by Git. These are development cases, not a held-out evaluation set.
+
+Text-only llama.cpp GPU settings are in `configs/llamacpp-gpu.json`.
