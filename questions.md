@@ -1,4 +1,4 @@
-# Group 1 and Group 2 question bank
+# ContractBench: Groups 1 and 2 question bank
 
 Development version 0.1.0: 50 underlying cases; 30 Group 1 and 20 Group 2.
 These are the exact direct prompts. Separate reference answers and exact path ledgers are provided in the release. All cases remain development material.

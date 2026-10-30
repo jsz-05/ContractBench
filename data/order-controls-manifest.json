@@ -1223,7 +1223,7 @@
     }
   ],
   "reference_invariance": "All exact and rounded manager payments, investor payments, path ledgers, and optimal underlying options are identical after applying old_to_new_labels. Displayed winning labels are expected to change only according to that mapping.",
-  "renderer_reference_sha256": "78c64e4cf00154a83570c6f815a132bef69bce6a58c4e71756cccbdddf43bad6",
+  "renderer_reference_sha256": "c87545107c61f8e0d69c35afab5bcfb3c6f43696c3a193b558acd1e9f5c0e642",
   "split_rule": "An original and its control are one case group and must remain in the same data split. All cases are development cases.",
   "transform": {
     "logic": "Reverse the original option identities, then relabel the displayed list A, B, C. Leave each identity's financial outcomes and the contract unchanged.",

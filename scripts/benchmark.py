@@ -226,7 +226,7 @@ def build():
     if path.exists() and path.read_text()!=content:
         raise ValueError("Released cases differ; create a new version instead of overwriting.")
     path.write_text(content)
-    manifest={"version":"0.1.0-development","cases":50,"families":{"G1":30,"G2":20},
+    manifest={"benchmark":"ContractBench","version":"0.1.0-development","cases":50,"families":{"G1":30,"G2":20},
               "status":"Reviewed development cases; no external financial-expert validation.",
               "case_file_sha256":hashlib.sha256(content.encode()).hexdigest(),"sources":SOURCE_URLS,
               "choice_counts":dict(Counter(x["gold"]["choice"] for x in entries)),
@@ -246,10 +246,10 @@ def build():
         if (ROOT/"data"/"evaluation-freeze.json").exists():
             assert old["case_file_sha256"]==manifest["case_file_sha256"],"Changed frozen case content"
     mp.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\n")
-    pages=["# Group 1 and Group 2 question bank","",
+    pages=["# ContractBench: Groups 1 and 2 question bank","",
            "Development version 0.1.0: 50 underlying cases; 30 Group 1 and 20 Group 2.",
            "These are the exact direct prompts. Separate reference answers and exact path ledgers are provided in the release. All cases remain development material.",""]
-    answers=["# Reference answers","", "Expected manager compensation, rounded to cents. Machine-readable records include exact fractions, every outcome payment, investor outcomes, and structured interpretations.",""]
+    answers=["# ContractBench reference answers","", "Expected manager compensation, rounded to cents. Machine-readable records include exact fractions, every outcome payment, investor outcomes, and structured interpretations.",""]
     for e in entries:
         pages += ["## "+e["id"]+": "+e["title"],"", "Family: "+e["family"]+"; subtype: "+e["subtype"]+".","",e["prompt"],""]
         means=", ".join(k+" USD "+v for k,v in e["gold"]["expected_pay"].items())

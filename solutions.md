@@ -1,4 +1,4 @@
-# Worked reference solutions
+# ContractBench worked solutions
 
 These solutions describe the stated synthetic contracts. All figures are dollars. Period bonuses and deductions are computed before averaging. Exact fractions remain in the machine-readable records.
 

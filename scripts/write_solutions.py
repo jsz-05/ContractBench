@@ -2,7 +2,7 @@
 import json
 from benchmark import ROOT,money
 cases=[json.loads(s) for s in (ROOT/"data"/"cases.jsonl").read_text().splitlines()]
-out=["# Worked reference solutions","",
+out=["# ContractBench worked solutions","",
      "These solutions describe the stated synthetic contracts. All figures are dollars. Period bonuses and deductions are computed before averaging. Exact fractions remain in the machine-readable records.",""]
 for c in cases:
     out += ["## "+c["id"]+": "+c["title"],"",c["rationale"],"",

@@ -1,4 +1,4 @@
-# Reference answers
+# ContractBench reference answers
 
 Expected manager compensation, rounded to cents. Machine-readable records include exact fractions, every outcome payment, investor outcomes, and structured interpretations.
 
